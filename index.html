@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Jivon</title>
+  <meta name="description" content="Privacy Policy for Jivon (com.jivon.health) - Privacy-first, local-only personal health and medical records vault.">
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --border-color: #e2e8f0;
+      --accent: #007aff;
+      --accent-soft: rgba(0, 122, 255, 0.1);
+      --green: #10b981;
+      --green-soft: rgba(16, 185, 129, 0.1);
+      --badge-bg: #f1f5f9;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #0b0f19;
+        --card-bg: #141b2d;
+        --text-primary: #f8fafc;
+        --text-secondary: #94a3b8;
+        --border-color: #1e293b;
+        --accent: #38bdf8;
+        --accent-soft: rgba(56, 189, 248, 0.12);
+        --green: #34d399;
+        --green-soft: rgba(52, 211, 153, 0.12);
+        --badge-bg: #1e293b;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      line-height: 1.65;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 48px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 16px 12px;
+      }
+      .container {
+        padding: 24px 20px;
+        border-radius: 18px;
+      }
+    }
+
+    .header {
+      margin-bottom: 36px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 24px;
+    }
+
+    .brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.6px;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--text-secondary);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin: 28px 0;
+    }
+
+    .highlight-card {
+      background: var(--badge-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .highlight-card .icon {
+      font-size: 20px;
+      margin-bottom: 6px;
+      display: inline-block;
+    }
+
+    .highlight-card h4 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--text-primary);
+    }
+
+    .highlight-card p {
+      font-size: 12.5px;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 750;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+      color: var(--text-secondary);
+    }
+
+    li {
+      font-size: 14.5px;
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--text-primary);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 13.5px;
+    }
+
+    th, td {
+      border: 1px solid var(--border-color);
+      padding: 12px 14px;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--badge-bg);
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    td {
+      color: var(--text-secondary);
+    }
+
+    .callout {
+      background: var(--green-soft);
+      border: 1px solid var(--green);
+      border-radius: 14px;
+      padding: 16px 20px;
+      margin: 24px 0;
+    }
+
+    .callout h4 {
+      color: var(--green);
+      font-size: 14.5px;
+      font-weight: 750;
+      margin-bottom: 6px;
+    }
+
+    .callout p {
+      color: var(--text-primary);
+      font-size: 13.5px;
+      margin-bottom: 0;
+    }
+
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-color);
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-align: center;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <header class="header">
+      <div class="brand-pill">🛡️ Jivon Health • Privacy by Design</div>
+      <h1>Privacy Policy for Jivon</h1>
+      <div class="meta">
+        <span><strong>Application:</strong> Jivon</span>
+        <span><strong>Package Name:</strong> <code>com.jivon.health</code></span>
+        <span><strong>Effective Date:</strong> September 25, 2026</span>
+      </div>
+    </header>
+
+    <div class="callout">
+      <h4>🔒 100% Local-First Architecture</h4>
+      <p>Jivon does not own, operate, or connect to remote user databases or cloud servers. All personal medical data, health records, notes, cycle tracking, and workout trails are stored solely on your physical device hardware.</p>
+    </div>
+
+    <div class="highlights">
+      <div class="highlight-card">
+        <div class="icon">🔒</div>
+        <h4>Zero Cloud Storage</h4>
+        <p>Your health data is stored strictly in your device's sandboxed filesystem with 256-Bit AES encryption.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="icon">🚫</div>
+        <h4>Zero Telemetry</h4>
+        <p>No Google Analytics, Firebase Analytics, crash loggers, trackers, or advertising SDKs.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="icon">🧠</div>
+        <h4>On-Device AI & OCR</h4>
+        <p>Clinical AI and OCR run entirely on your phone's processor. No queries or photos are sent to cloud AI servers.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="icon">📱</div>
+        <h4>Hardware Biometrics</h4>
+        <p>Vault locking uses Android BiometricPrompt hardware enclave; biometric data never leaves your device chip.</p>
+      </div>
+    </div>
+
+    <section>
+      <h2>1. Information We Do NOT Collect</h2>
+      <p>Unlike conventional health applications, Jivon operates without a remote server backend:</p>
+      <ul>
+        <li><strong>No Account Creation:</strong> You do not need an email, phone number, password, or cloud account to use Jivon.</li>
+        <li><strong>No Health Data Uploads:</strong> We never transmit, sync, host, or sell your health records, lab reports, doctor appointments, medications, cycle tracking, or GPS routes.</li>
+        <li><strong>No Cloud AI Queries:</strong> Jivon's Clinical AI Assistant is powered by an offline, on-device heuristics engine. Queries never leave your phone.</li>
+        <li><strong>No Commercial Analytics:</strong> We do not track user behavior or app screen views.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. On-Device Data Storage & Hardware Permissions</h2>
+      <p>Jivon accesses specific device features solely to provide local functionality:</p>
+      <ul>
+        <li><strong>Medical Vault & Document Storage:</strong> Documents, prescriptions, and lab values are stored in private local app storage, secured via on-device 256-Bit AES hardware encryption.</li>
+        <li><strong>Camera & Media Files:</strong> Used strictly upon your explicit action to photograph prescriptions, lab reports, or scan food barcodes. Text recognition (OCR) is performed 100% on-device via Google ML Kit neural models.</li>
+        <li><strong>Location Data (GPS):</strong> Used only during active, user-initiated outdoor workouts to calculate distance, speed, and draw route trails on a custom vector canvas. Location data is never broadcast or shared with mapping tile servers.</li>
+        <li><strong>Physical Activity (Step Counter):</strong> Reads the Android hardware step sensor (<code>Sensor.TYPE_STEP_COUNTER</code>) locally to record daily steps.</li>
+        <li><strong>Biometric Sensors:</strong> Uses Android's native <code>BiometricPrompt</code> to unlock your private vault. Your fingerprint or facial scan data is handled exclusively by your device's secure hardware enclave; Jivon never accesses biometric geometry.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Third-Party Service Disclosure: Open Food Facts</h2>
+      <p>The <strong>only</strong> external network communication occurs when scanning a food barcode in the Diet tab:</p>
+      <ul>
+        <li><strong>Third-Party Service:</strong> Open Food Facts API (<code>world.openfoodfacts.org</code>).</li>
+        <li><strong>When Activated:</strong> Only if a scanned barcode is not already found in Jivon’s built-in offline food library.</li>
+        <li><strong>Data Sent:</strong> <strong>Only the numeric barcode digits</strong> (e.g., <code>8901030383792</code>) via secure HTTPS.</li>
+        <li><strong>Privacy Protection:</strong> No names, medical records, patient data, device identifiers, or GPS coordinates are ever transmitted. If the device is offline or in airplane mode, the lookup gracefully times out and allows manual input.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Optional Android Profile Backup</h2>
+      <p>Jivon supports Android's standard OS-level backup (<code>BackupManager</code>), which is <strong>disabled by default</strong> for privacy:</p>
+      <ul>
+        <li>If enabled manually in Settings, an encrypted snapshot of your profile is stored in your <strong>personal Google Drive account</strong> managed by Android OS.</li>
+        <li>The developers of Jivon do not have access to your Google account or backup files.</li>
+        <li>When disabled, local backup snapshots are permanently purged from your device.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. User Data Sovereignty & Deletion</h2>
+      <p>Because all data resides exclusively on your device, you maintain complete control:</p>
+      <ul>
+        <li>You can view, edit, or delete any record, document, medication, or workout directly within the app.</li>
+        <li>Uninstalling Jivon or clearing the app data in Android Settings instantly and permanently erases all stored data from the device.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Google Play Data Safety Disclosures</h2>
+      <p>This table outlines Jivon's technical declarations for the Google Play Store Data Safety section:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Data Category</th>
+            <th>Collected?</th>
+            <th>Shared?</th>
+            <th>Processing & Storage Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Health & Fitness Info</strong></td>
+            <td>No</td>
+            <td>No</td>
+            <td>Stored 100% on-device with 256-Bit AES encryption.</td>
+          </tr>
+          <tr>
+            <td><strong>Personal Info (Name, Age, Doctor)</strong></td>
+            <td>No</td>
+            <td>No</td>
+            <td>Stored locally in app sandbox. Never transmitted.</td>
+          </tr>
+          <tr>
+            <td><strong>Photos & Documents</strong></td>
+            <td>No</td>
+            <td>No</td>
+            <td>Processed strictly on-device using local ML Kit OCR.</td>
+          </tr>
+          <tr>
+            <td><strong>Precise Location (GPS)</strong></td>
+            <td>No</td>
+            <td>No</td>
+            <td>Used ephemeral on-device during outdoor runs; not transmitted.</td>
+          </tr>
+          <tr>
+            <td><strong>Food Barcode Lookups</strong></td>
+            <td>Yes (Numeric barcode only)</td>
+            <td>Open Food Facts</td>
+            <td>Transmits only the barcode number over HTTPS for nutrition lookup. No identifiers attached.</td>
+          </tr>
+          <tr>
+            <td><strong>Device or Other IDs</strong></td>
+            <td>No</td>
+            <td>No</td>
+            <td>Zero tracking IDs, advertising IDs, or telemetry tokens.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>7. Contact Information</h2>
+      <p>If you have any questions or feedback regarding this Privacy Policy or Jivon's privacy architecture, please contact us:</p>
+      <p>
+        <strong>Application:</strong> Jivon (Health & Medical Vault)<br>
+        <strong>Developer Contact:</strong> <a href="https://github.com">GitHub Repository / Issues</a><br>
+        <strong>Package ID:</strong> <code>com.jivon.health</code>
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 Jivon. All rights reserved. • Built with Privacy by Design.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
